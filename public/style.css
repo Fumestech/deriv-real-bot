@@ -1,1 +1,165 @@
+* {
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+.container {
+  width: 100%;
+  max-width: 650px;
+  margin: auto;
+  padding: 16px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.card {
+  background: #1e293b;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 14px;
+}
+
+label {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  min-height: 44px;
+  border-radius: 8px;
+  border: 1px solid #475569;
+  font-size: 16px;
+}
+
+input,
+select {
+  padding: 10px;
+  background: #0f172a;
+  color: #fff;
+}
+
+button {
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.primary {
+  background: #22c55e;
+  color: #052e16;
+  border: none;
+}
+
+.danger {
+  background: #ef4444;
+  color: white;
+  border: none;
+}
+
+.actions {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.check input {
+  width: 20px;
+  min-height: 20px;
+}
+
+.badge {
+  background: #475569;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.badge.ok {
+  background: #166534;
+}
+
+.market {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.market div {
+  background: #0f172a;
+  padding: 14px;
+  border-radius: 8px;
+}
+
+.market small {
+  display: block;
+  color: #94a3b8;
+  margin-bottom: 5px;
+}
+
+.market strong {
+  font-size: 20px;
+}
+
+.log {
+  max-height: 220px;
+  overflow-y: auto;
+  background: #0f172a;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.log div {
+  padding: 5px 0;
+  border-bottom: 1px solid #1e293b;
+}
+
+footer {
+  color: #94a3b8;
+  font-size: 12px;
+  text-align: center;
+  padding: 10px;
+}
+
+@media (max-width: 400px) {
+  .container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+  }
